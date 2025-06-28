@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import logo from "./../assets/ah.png"
+import "./Navbar.css"
 const Navbar = () => {
     const links=<>
         <Link className='mr-3 mt-1' to='/'><a>Home</a></Link>
@@ -11,7 +12,7 @@ const Navbar = () => {
         <li><a href='#contacts'>Contacts</a></li>
     </>
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div id='navbar' className="navbar bg-base-100 shadow-sm">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
