@@ -10,6 +10,7 @@ import {
 import MainLayout from './Layout/MainLayout.jsx'
 import GardenDetails from './Projects/GardenDetails.jsx'
 import TutorDetails from './Projects/TutorDetails.jsx'
+import SubscriptionDetails from './Projects/SubscriptionDetails.jsx'
 
 const router = createBrowserRouter([
   {
@@ -30,7 +31,7 @@ const router = createBrowserRouter([
       },
       {
         path:'subscribe',
-        Component: GardenDetails
+        Component: SubscriptionDetails
       }
     ]
   },

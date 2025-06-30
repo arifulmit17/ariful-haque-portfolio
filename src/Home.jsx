@@ -8,22 +8,22 @@ const Home = () => {
             <section className='w-11/12 mx-auto shadow-sm p-5 rounded-2xl'>
                 <div className=' flex flex-col lg:flex-row'>
                     <div className='flex-1'>
-                        <figure className='ml-10' >
+                        <figure className='mx-auto lg:ml-10 ' >
                             <img className='ml-20 w-[200px] rounded-3xl' src="https://i.postimg.cc/P53Yj50K/Arif.png" alt="Md. Ariful Haque" /> 
                         </figure>
                        
                     </div> 
                      <div className='flex-1 ml-10 mt-5' >
-                        <div>
+                        <div className='text-center lg:text-left'>
                              <h1 className='text-3xl my-2 font-bold'>Md. Ariful Haque</h1>
                              <h1 className='text-2xl my-2 font-bold'>Junior frontend developer</h1>
                         </div>
-                        <div className='flex my-2 gap-3'>
+                        <div className='flex mx-20 lg:m-0 my-2 gap-3'>
                             <a target='_blank' href="https://www.linkedin.com/in/md-ariful-haque-sunny-803b12b0/"><img width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/></a>
                             
                             <a target='_blank' href="https://github.com/arifulmit17"><img width="48" height="48" src="https://img.icons8.com/ios-filled/50/github.png" alt="github"/></a>
                         </div>
-                        <button className='btn btn-soft btn-accent'>Resume</button>
+                        <button className='btn btn-soft mx-20 lg:m-0 btn-accent'>Resume</button>
                     </div>
                       
                 </div>
@@ -70,41 +70,41 @@ const Home = () => {
             <section id='education' className='w-11/12 my-10 mx-auto shadow-sm p-5 rounded-2xl'>
                 <h1 className='text-3xl font-bold text-center my-10'>Education</h1>
                 <div>
-                    <div className='bg-blue-50 m-5 p-5 rounded-2xl'>
-                        <h1>Master in IT (2019) </h1>
+                    <div className='bg-blue-50 m-5 p-5 text-center lg:text-left rounded-2xl'>
+                        <h1 className='font-bold'>Master in IT (2019) </h1>
                         <h2>Institute of information technology</h2>
                         <h2>Dhaka University</h2>
                     </div>
-                    <div className='bg-blue-50 m-5 p-5 rounded-2xl'>
-                        <h1>Bachelor of Science and Engineering (2015)</h1>
+                    <div className='bg-blue-50 m-5 p-5  text-center lg:text-left rounded-2xl'>
+                        <h1 className='font-bold'>Bachelor of Science and Engineering (2015)</h1>
                         <h2>Electronics and Communication Engineering </h2>
-                        <h2>KUET</h2>
+                        <h2>Khulna University of Engineering and Technology</h2>
                     </div>
                 </div>
             </section>
             <section id='projects' className='w-11/12 my-10 mx-auto shadow-sm p-5 rounded-2xl'>
                 <h1 className='text-3xl font-bold text-center my-10'>Projects</h1>
                 <div className='bg-blue-50 m-5 p-5 rounded-2xl'>
-                    <h1>Garden Community</h1>
-                    <img src="" alt="garden community" />
+                    <h1 className='text-center lg:text-left'>Garden Community</h1>
+                    <img className='mx-auto lg:ml-5  w-[400px]' src="https://i.postimg.cc/T3CX8v4J/Capturegarden.png" alt="garden community" />
                     <Link to={'garden'}>
-                    <button className='btn btn-soft btn-accent'>Details</button>
+                    <button className='btn btn-soft btn-accent lg:ml-5 ml-20'>Details</button>
                     </Link>
                     
                 </div>
                 <div className='bg-blue-50 m-5 p-5 rounded-2xl'>
-                    <h1>Tutor Hire</h1>
-                    <img src="" alt="Tutor Hire" />
+                    <h1 className='text-center lg:text-left'>Tutor Hire</h1>
+                    <img className='mx-auto lg:ml-5  w-[400px]' src="https://i.postimg.cc/hPmFG73v/Capturetutor.png" alt="Tutor Hire" />
                     <Link to={'tutor'}>
-                    <button className='btn btn-soft btn-accent'>Details</button>
+                    <button className='btn btn-soft btn-accent lg:ml-5 ml-20'>Details</button>
                     </Link>
                     
                 </div>
-                <div className='bg-blue-50 m-5 p-5 rounded-2xl'>
-                    <h1>Subscription Box</h1>
-                    <img src="" alt="Subscription Box" />
+                <div className='bg-blue-50 m-5 p-5 flex flex-col gap-3 rounded-2xl'>
+                    <h1 className='text-center lg:text-left'>Subscription Box</h1>
+                    <img className='mx-auto lg:ml-5 w-[400px]' src="https://i.postimg.cc/Fzgnv91F/Capture-sub.png" alt="Subscription Box" />
                     <Link to={'subscribe'}>
-                    <button className='btn btn-soft btn-accent'>Details</button>
+                    <button className='btn btn-soft btn-accent lg:ml-5 ml-20'>Details</button>
                     </Link>
                     
                 </div>

@@ -12,7 +12,8 @@ const Navbar = () => {
         <li><a href='#contacts'>Contacts</a></li>
     </>
     return (
-        <div id='navbar' className="navbar bg-base-100 shadow-sm">
+
+<div  className="navbar sticky top-0 bg-base-100 shadow-sm">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -21,12 +22,10 @@ const Navbar = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        {links}
+       {links}
       </ul>
     </div>
-    <div>
-        <img className='ml-10 w-10' src={logo} alt="ariful haque" />
-    </div>
+   <img className='ml-30 lg:ml-10 w-10' src={logo} alt="ariful haque" />
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

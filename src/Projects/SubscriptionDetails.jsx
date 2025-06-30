@@ -5,7 +5,7 @@ const SubscriptionDetails = () => {
         <div className='w-11/12 mx-auto'>
             <h1 className='font-bold text-2xl text-center text-blue-500'>Subscription Box</h1>
             <div className='my-5 bg-blue-50 p-5 rounded-2xl'>
-                <h1 className='font-bold ml-10'>Technology stack</h1>
+                <h1 className='font-bold ml-10'>Technology stack used</h1>
                 <ul className='list-disc ml-20'>
                     <li>React</li>
                     <li>Node.js</li>
