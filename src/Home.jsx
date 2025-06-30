@@ -113,7 +113,7 @@ const Home = () => {
             <h1 className='text-3xl font-bold text-center my-10'>Contacts</h1>
                 <div className='bg-blue-50 m-5 p-5 flex flex-col items-center lg:items-start rounded-2xl'>
                     <h1><span className='font-bold'>Email:</span> ariful.haque1510@gmail.com</h1>
-                    <h2><span className='font-bold'>Phone:</span> 01757173149</h2>
+                    <h2><span className='font-bold'>Phone:</span> +8801757173149</h2>
                 </div>
             </section>
         </div>
