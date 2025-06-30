@@ -7,13 +7,13 @@ const Home = () => {
         <div>
             <section className='w-11/12 mx-auto shadow-sm p-5 rounded-2xl'>
                 <div className=' flex flex-col lg:flex-row'>
-                    <div className='flex-1'>
+                    <div className='w-1/2'>
                         <figure className='mx-auto lg:ml-10 ' >
                             <img className='ml-20 w-[200px] rounded-3xl' src="https://i.postimg.cc/P53Yj50K/Arif.png" alt="Md. Ariful Haque" /> 
                         </figure>
                        
                     </div> 
-                     <div className='flex-1 ml-10 mt-5' >
+                     <div className='flex flex-col items-center lg:items-start mt-5' >
                         <div className='text-center lg:text-left'>
                              <h1 className='text-3xl my-2 font-bold'>Md. Ariful Haque</h1>
                              <h1 className='text-2xl my-2 font-bold'>Junior frontend developer</h1>
@@ -84,36 +84,36 @@ const Home = () => {
             </section>
             <section id='projects' className='w-11/12 my-10 mx-auto shadow-sm p-5 rounded-2xl'>
                 <h1 className='text-3xl font-bold text-center my-10'>Projects</h1>
-                <div className='bg-blue-50 m-5 p-5 rounded-2xl'>
-                    <h1 className='text-center lg:text-left'>Garden Community</h1>
-                    <img className='mx-auto lg:ml-5  w-[400px]' src="https://i.postimg.cc/T3CX8v4J/Capturegarden.png" alt="garden community" />
+                <div className='bg-blue-50 m-5 p-5 flex flex-col gap-5 lg:items-start justify-center items-center rounded-2xl'>
+                    <h1 className=' font-bold'>Garden Community</h1>
+                    <img className='  w-[400px]' src="https://i.postimg.cc/T3CX8v4J/Capturegarden.png" alt="garden community" />
                     <Link to={'garden'}>
-                    <button className='btn btn-soft btn-accent lg:ml-5 ml-20'>Details</button>
+                    <button className='btn btn-soft btn-accent '>Details</button>
                     </Link>
                     
                 </div>
-                <div className='bg-blue-50 m-5 p-5 rounded-2xl'>
-                    <h1 className='text-center lg:text-left'>Tutor Hire</h1>
-                    <img className='mx-auto lg:ml-5  w-[400px]' src="https://i.postimg.cc/hPmFG73v/Capturetutor.png" alt="Tutor Hire" />
+                <div className='bg-blue-50 m-5 p-5 flex flex-col gap-5 lg:items-start justify-center items-center rounded-2xl'>
+                    <h1 className='text-center  font-bold'>Tutor Hire</h1>
+                    <img className='w-[400px]' src="https://i.postimg.cc/hPmFG73v/Capturetutor.png" alt="Tutor Hire" />
                     <Link to={'tutor'}>
-                    <button className='btn btn-soft btn-accent lg:ml-5 ml-20'>Details</button>
+                    <button className='btn btn-soft btn-accent '>Details</button>
                     </Link>
                     
                 </div>
-                <div className='bg-blue-50 m-5 p-5 flex flex-col gap-3 rounded-2xl'>
-                    <h1 className='text-center lg:text-left'>Subscription Box</h1>
-                    <img className='mx-auto lg:ml-5 w-[400px]' src="https://i.postimg.cc/Fzgnv91F/Capture-sub.png" alt="Subscription Box" />
+                <div className='bg-blue-50 m-5 p-5 flex flex-col gap-5 lg:items-start justify-center items-center rounded-2xl'>
+                    <h1 className='font-bold'>Subscription Box</h1>
+                    <img className=' w-[400px]' src="https://i.postimg.cc/Fzgnv91F/Capture-sub.png" alt="Subscription Box" />
                     <Link to={'subscribe'}>
-                    <button className='btn btn-soft btn-accent lg:ml-5 ml-20'>Details</button>
+                    <button className='btn btn-soft btn-accent'>Details</button>
                     </Link>
                     
                 </div>
             </section>
             <section id='contacts' className='w-11/12 my-10 mx-auto shadow-sm p-5 rounded-2xl'>
             <h1 className='text-3xl font-bold text-center my-10'>Contacts</h1>
-                <div className='bg-blue-50 m-5 p-5 rounded-2xl'>
-                    <h1>Email: ariful.haque1510@gmail.com</h1>
-                    <h2>Phone: 01757173149</h2>
+                <div className='bg-blue-50 m-5 p-5 flex flex-col items-center lg:items-start rounded-2xl'>
+                    <h1><span className='font-bold'>Email:</span> ariful.haque1510@gmail.com</h1>
+                    <h2><span className='font-bold'>Phone:</span> 01757173149</h2>
                 </div>
             </section>
         </div>
