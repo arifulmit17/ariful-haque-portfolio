@@ -3,8 +3,16 @@ import { Link } from 'react-router';
 import logo from "./../assets/ah.png"
 import "./Navbar.css"
 const Navbar = () => {
+  const fileId = '19FE4FSfIpnyqUjU6nRK8xUDO2PiXT71b';
+
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = `https://drive.google.com/uc?export=download&id=${fileId}`;
+    link.download = 'document.pdf'; 
+    link.click();
+  };
     const links=<>
-        <Link className='mr-3 mt-1' to='/'><a>Home</a></Link>
+        <Link className='mr-3 mt-1' to='/'>Home</Link>
         <li><a href='#about'>About</a></li>
         <li><a href='#skill'>Skills</a></li>
         <li><a href='#education'>Education</a></li>
@@ -33,7 +41,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Resume</a>
+    <button onClick={handleDownload} className="btn mr-10">Resume</button>
   </div>
 </div>
     );

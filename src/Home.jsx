@@ -3,13 +3,21 @@ import { FaReact } from "react-icons/fa";
 import { Link } from 'react-router';
 
 const Home = () => {
+    const fileId = '1S9V9TZWAvF6Mt1KPYUj7LKUa_9yEUs1i';
+
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = `https://drive.google.com/uc?export=download&id=${fileId}`;
+    link.download = 'document.pdf'; 
+    link.click();
+  };
     return (
         <div>
             <section className='w-11/12 mx-auto shadow-sm p-5 rounded-2xl'>
                 <div className=' flex flex-col lg:flex-row'>
                     <div className='w-1/2'>
                         <figure className='mx-auto lg:ml-10 ' >
-                            <img className='ml-20 w-[200px] rounded-3xl' src="https://i.postimg.cc/P53Yj50K/Arif.png" alt="Md. Ariful Haque" /> 
+                            <img className='ml-20 w-[200px] rounded-3xl' src="https://i.postimg.cc/j5gXb50n/Arif.png" alt="Md. Ariful Haque" /> 
                         </figure>
                        
                     </div> 
@@ -23,7 +31,7 @@ const Home = () => {
                             
                             <a target='_blank' href="https://github.com/arifulmit17"><img width="48" height="48" src="https://img.icons8.com/ios-filled/50/github.png" alt="github"/></a>
                         </div>
-                        <button className='btn btn-soft mx-20 lg:m-0 btn-accent'>Resume</button>
+                        <button onClick={handleDownload} className='btn btn-soft mx-20 lg:m-0 btn-accent'>Resume</button>
                     </div>
                       
                 </div>
