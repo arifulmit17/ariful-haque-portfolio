@@ -76,7 +76,7 @@ const Home = () => {
         // Hover effect
         whileHover={{ scale: 1.05, boxShadow: "0px 10px 20px rgba(0,0,0,0.2)" }} >
                 
-                <p data-theme="light" className='bg-blue-50' >I am a tech enthusiast who likes to learn different technologies like web technologies, AI and machine learning. This enthusiasm has developed during my bachelor and master's education. I have noticed that the technology that we learn and use is changing rapidly and so to be relevant in the current job sector we need to learn new technologies regardless of their domain. I also enjoy reading books and gardening. </p>
+                <p data-theme="light" className='bg-blue-50' >I am a tech enthusiast who likes to learn different technologies like web technologies, AI and machine learning. This enthusiasm developed during my bachelor's education. At the time of my first job I felt an urge to learn programming. So I attended a master's program to enhance my programming skills. I have noticed that the technology that we learn and use is changing rapidly and so to be relevant in the current job sector we need to learn new technologies regardless of their domain. I also enjoy reading books and gardening. </p>
             </motion.div>
                 
             </section>
