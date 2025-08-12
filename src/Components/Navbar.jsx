@@ -16,6 +16,7 @@ const Navbar = () => {
         <li><a href='#about'>About</a></li>
         <li><a href='#skill'>Skills</a></li>
         <li><a href='#education'>Education</a></li>
+        <li><a href='#experience'>Experience</a></li>
         <li><a href='#projects'>Projects</a></li>
         <li><a href='#contacts'>Contacts</a></li>
     </>
@@ -40,6 +41,10 @@ const Navbar = () => {
       {links}
     </ul>
   </div>
+  <input
+  type="checkbox"
+  value="night"
+  className="ml-30 toggle theme-controller col-span-2 col-start-1 row-start-1 border-sky-400 bg-white [--tglbg:var(--color-sky-500)] checked:border-blue-800 checked:bg-blue-300 checked:[--tglbg:var(--color-blue-900)]" />
   <div className="navbar-end">
     <button onClick={handleDownload} className="btn mr-10">Resume</button>
   </div>
