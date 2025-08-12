@@ -40,10 +40,15 @@ const Home = () => {
     return (
         <div>
             <section className='w-11/12 mx-auto dark:text-white shadow-sm p-5 rounded-2xl'>
-                <div className=' flex flex-col lg:flex-row'>
+                <motion.div initial={{ opacity: 0, y: 50 }}  // Start hidden and pushed down
+        animate={{ opacity: 1, y: 0 }}   // Fade in and slide up
+        transition={{ duration: 0.6, ease: "easeOut" }} // Smooth timing
+
+        // Hover effect
+        whileHover={{ scale: 1.05, boxShadow: "0px 10px 20px rgba(0,0,0,0.2)" }} data-theme="light" className=' flex flex-col lg:flex-row bg-blue-50 m-5 p-5 rounded-2xl'>
                     <div  className='w-1/2'>
                         <figure className='mx-auto lg:ml-10 ' >
-                            <img className='ml-20 w-[200px] rounded-3xl' src="https://res.cloudinary.com/dfhlm4cyw/image/upload/v1754243654/Arif_vtijxe.png" alt="Md. Ariful Haque" /> 
+                            <img className='ml-20 w-[200px] rounded-4xl' src="https://res.cloudinary.com/dfhlm4cyw/image/upload/v1754243654/Arif_vtijxe.png" alt="Md. Ariful Haque" /> 
                         </figure>
                        
                     </div> 
@@ -60,7 +65,7 @@ const Home = () => {
                         <button onClick={handleDownload} className='btn btn-soft mx-20 lg:m-0 btn-accent'>Resume</button>
                     </div>
                       
-                </div>
+                </motion.div>
             </section>
             <section id='about'  className='w-11/12 my-10 mx-auto shadow-sm p-5 rounded-2xl'>
             <h1 className='text-3xl font-bold text-center my-10'>About Me</h1>
@@ -244,17 +249,20 @@ const Home = () => {
         // Hover effect
         whileHover={{ scale: 1.05, boxShadow: "0px 10px 20px rgba(0,0,0,0.2)" }} data-theme="light" className='bg-blue-50 m-5 p-5 flex lg:flex-row flex-col gap-5 lg:items-start rounded-2xl'>
                     <div className='lg:w-1/2 w-full'>
-                    <img className='  w-full ' src="https://res.cloudinary.com/dfhlm4cyw/image/upload/v1754312947/Capturegarden_std2jq.png" alt="garden community" />
+                    <img className='w-full' src="https://res.cloudinary.com/dfhlm4cyw/image/upload/v1754313041/Capturetutor_xgtnbo.png" alt="Tutor Hire" />
                     </div>
                     
                     <div className='lg:w-1/2 lg:mt-0 mt-5 w-full flex flex-col gap-5'>
-                    <h1 className=' font-bold'>Garden Community</h1>
-                    <p>This is a platform for gardening enthusiasts for many benefits such as weekly discussions, forums, group meetings, one to one session etc</p>
+                    <h1 className=' font-bold'>Tutor Hire</h1>
+                    <p>This site focuses on a platform for teaching enthusiasts and students for many benefits</p>
                     <h2>Features</h2>
                     <ul className="list-disc pl-5">
-                        <li>Featured tips and gardeners on home page</li>
-                        <li>Browse tips based on filtered difficulty of easy,medium or hard.</li>
-                        <li>Like on favorite tips</li>
+                        <li>Stats and languages on home page</li>
+                        <li>Browse tutors based on languages.</li>
+                        <li>Like on booked tutors</li>
+                        
+
+
                     </ul>
                     <div className='lg:flex-row  flex-col  gap-3'>
                         <div className="badge badge-outline  badge-accent">React.js</div>
@@ -263,9 +271,10 @@ const Home = () => {
                         <div className="badge badge-outline  badge-accent">TailwindCss</div>
                         <div className="badge badge-outline  badge-accent">MongoDB</div>
                         <div className="badge badge-outline  badge-accent">Firebase</div>
+                        <div className="badge badge-outline  badge-accent">JWT</div>
                     </div>
                     <div className='flex justify-end'>
-                        <Link to={'garden'}>
+                        <Link to={'tutor'}>
                         <motion.button
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
@@ -289,28 +298,26 @@ const Home = () => {
         // Hover effect
         whileHover={{ scale: 1.05, boxShadow: "0px 10px 20px rgba(0,0,0,0.2)" }} data-theme="light" className='bg-blue-50 m-5 p-5 flex lg:flex-row flex-col gap-5 lg:items-start rounded-2xl'>
                     <div className='lg:w-1/2 w-full'>
-                    <img className='  w-full ' src="https://res.cloudinary.com/dfhlm4cyw/image/upload/v1754312947/Capturegarden_std2jq.png" alt="garden community" />
+                    <img className=' w-full' src="https://res.cloudinary.com/dfhlm4cyw/image/upload/v1754313017/Capture_sub_hlzbiu.png" alt="Subscription Box" />
                     </div>
                     
                     <div className='lg:w-1/2 lg:mt-0 mt-5 w-full flex flex-col gap-5'>
-                    <h1 className=' font-bold'>Garden Community</h1>
-                    <p>This is a platform for gardening enthusiasts for many benefits such as weekly discussions, forums, group meetings, one to one session etc</p>
+                    <h1 className=' font-bold'>Subscription Box</h1>
+                    <p>Our site focuses to facilitate users to avail diverse subscription packages on monthly basis</p>
                     <h2>Features</h2>
                     <ul className="list-disc pl-5">
-                        <li>Featured tips and gardeners on home page</li>
-                        <li>Browse tips based on filtered difficulty of easy,medium or hard.</li>
-                        <li>Like on favorite tips</li>
+                        <li>For users there is opportunity to choose from 6 different streaming platforms.</li>
+                        <li>Users can give their reviews at the subscriptionDetails page</li>
+                        <li>Users can change their name and profile picture at the profile page.</li>
                     </ul>
                     <div className='lg:flex-row  flex-col  gap-3'>
                         <div className="badge badge-outline  badge-accent">React.js</div>
-                        <div className="badge badge-outline  badge-accent">Express.js</div>
                         <div className="badge badge-outline  badge-accent">Javascript</div>
                         <div className="badge badge-outline  badge-accent">TailwindCss</div>
-                        <div className="badge badge-outline  badge-accent">MongoDB</div>
                         <div className="badge badge-outline  badge-accent">Firebase</div>
                     </div>
                     <div className='flex justify-end'>
-                        <Link to={'garden'}>
+                        <Link to={'subscribe'}>
                         <motion.button
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
@@ -327,29 +334,15 @@ const Home = () => {
                     
                     
                 </motion.div>
-                <div className='bg-blue-50 m-5 p-5 flex flex-col gap-5 lg:items-start justify-center items-center rounded-2xl'>
-                    <h1 className='text-center  font-bold'>Tutor Hire</h1>
-                    <img className='w-[400px]' src="https://res.cloudinary.com/dfhlm4cyw/image/upload/v1754313041/Capturetutor_xgtnbo.png" alt="Tutor Hire" />
-                    <Link to={'tutor'}>
-                    <button className='btn btn-soft btn-accent '>Details</button>
-                    </Link>
-                    
-                </div>
-                <div className='bg-blue-50 m-5 p-5 flex flex-col gap-5 lg:items-start justify-center items-center rounded-2xl'>
-                    <h1 className='font-bold'>Subscription Box</h1>
-                    <img className=' w-[400px]' src="https://res.cloudinary.com/dfhlm4cyw/image/upload/v1754313017/Capture_sub_hlzbiu.png" alt="Subscription Box" />
-                    <Link to={'subscribe'}>
-                    <button className='btn btn-soft btn-accent'>Details</button>
-                    </Link>
-                    
-                </div>
+                
+                
             </section>
             <section
       id="contacts"
       className="w-11/12 my-10 mx-auto shadow-sm p-5 rounded-2xl"
     >
       <h1 className="text-3xl font-bold text-center my-10">Contacts</h1>
-        <div className='lg:flex flex-col'>
+        <div className='flex lg:flex-row flex-col'>
             <motion.div
         data-theme="light"
         className="bg-blue-50 m-5 p-5 flex flex-col items-start lg:items-start rounded-2xl w-full"
@@ -364,14 +357,14 @@ const Home = () => {
       >
         <h1 className='mb-4'>Let's connect</h1>
         <div className="flex items-start mb-4 space-x-3">
-        <MdEmail className="text-blue-600 text-3xl" />
+        <MdEmail className="text-accent text-3xl" />
         <h1 className="text-lg font-semibold">
           <span className="font-bold">Email:</span> ariful.haque1510@gmail.com
         </h1>
       </div>
 
       <div className="flex items-start space-x-3">
-        <MdPhone className="text-blue-600 text-3xl" />
+        <MdPhone className="text-accent text-3xl" />
         <h2 className="text-lg font-semibold">
           <span className="font-bold">Phone:</span> +8801757173149
         </h2>
@@ -389,20 +382,20 @@ const Home = () => {
             name="user_name"
             placeholder="Your Name"
             required
-            className="p-2 border rounded"
+            className="p-2 bg-white rounded"
           />
           <input
             type="email"
             name="user_email"
             placeholder="Your Email"
             required
-            className="p-2 border rounded"
+            className="p-2 bg-white rounded"
           />
           <textarea
             name="message"
             placeholder="Your Message"
             required
-            className="p-2 border rounded"
+            className="p-2 bg-white rounded"
             rows="4"
           />
           <button
