@@ -44,9 +44,9 @@ const Navbar = () => {
   <input
   type="checkbox"
   value="night"
-  className="ml-30 toggle theme-controller col-span-2 col-start-1 row-start-1 border-sky-400 bg-white [--tglbg:var(--color-sky-500)] checked:border-blue-800 checked:bg-blue-300 checked:[--tglbg:var(--color-blue-900)]" />
-  <div className="navbar-end">
-    <button onClick={handleDownload} className="btn mr-10">Resume</button>
+  className="ml-15 lg:ml-30 toggle theme-controller col-span-2 col-start-1 row-start-1 border-sky-400 bg-white [--tglbg:var(--color-sky-500)] checked:border-blue-800 checked:bg-blue-300 checked:[--tglbg:var(--color-blue-900)]" />
+  <div className="navbar-end mr-5">
+    <button onClick={handleDownload} className="btn lg:mr-10 mr-5 ">Resume</button>
   </div>
 </div>
     );

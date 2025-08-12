@@ -46,9 +46,9 @@ const Home = () => {
 
         // Hover effect
         whileHover={{ scale: 1.05, boxShadow: "0px 10px 20px rgba(0,0,0,0.2)" }} data-theme="light" className=' flex flex-col lg:flex-row bg-blue-50 m-5 p-5 rounded-2xl'>
-                    <div  className='w-1/2'>
+                    <div  className='lg:w-1/2 ml-10 w-full md:ml-50 lg:ml-0 '>
                         <figure className='mx-auto lg:ml-10 ' >
-                            <img className='ml-20 w-[200px] rounded-4xl' src="https://res.cloudinary.com/dfhlm4cyw/image/upload/v1754243654/Arif_vtijxe.png" alt="Md. Ariful Haque" /> 
+                            <img className=' w-[200px] rounded-4xl' src="https://res.cloudinary.com/dfhlm4cyw/image/upload/v1754243654/Arif_vtijxe.png" alt="Md. Ariful Haque" /> 
                         </figure>
                        
                     </div> 
@@ -337,12 +337,10 @@ const Home = () => {
                 
                 
             </section>
-            <section
-      id="contacts"
-      className="w-11/12 my-10 mx-auto shadow-sm p-5 rounded-2xl"
+            <section id="contacts" className="w-11/12 my-10 mx-auto shadow-sm p-5 rounded-2xl"
     >
       <h1 className="text-3xl font-bold text-center my-10">Contacts</h1>
-        <div className='flex lg:flex-row flex-col'>
+        <div className='w-11/12 lg:w-full flex lg:flex-row flex-col'>
             <motion.div
         data-theme="light"
         className="bg-blue-50 m-5 p-5 flex flex-col items-start lg:items-start rounded-2xl w-full"
