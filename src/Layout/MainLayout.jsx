@@ -9,7 +9,7 @@ const MainLayout = () => {
         window.scrollTo(0,0)
     },[location.pathname])
     return (
-        <div>
+        <div >
             <Navbar></Navbar>
             <Outlet></Outlet>
         </div>

@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import logo from "./../assets/ah.png"
 import "./Navbar.css"
 const Navbar = () => {
-  const fileId = '19FE4FSfIpnyqUjU6nRK8xUDO2PiXT71b';
+  const fileId = '1S9V9TZWAvF6Mt1KPYUj7LKUa_9yEUs1i';
 
   const handleDownload = () => {
     const link = document.createElement('a');
@@ -43,7 +43,7 @@ const Navbar = () => {
   </div>
   <input
   type="checkbox"
-  value="night"
+  value="light"
   className="ml-15 lg:ml-30 toggle theme-controller col-span-2 col-start-1 row-start-1 border-sky-400 bg-white [--tglbg:var(--color-sky-500)] checked:border-blue-800 checked:bg-blue-300 checked:[--tglbg:var(--color-blue-900)]" />
   <div className="navbar-end mr-5">
     <button onClick={handleDownload} className="btn lg:mr-10 mr-5 ">Resume</button>

@@ -5,6 +5,13 @@ import { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import { motion } from "motion/react"
 import { MdEmail, MdPhone } from "react-icons/md";
+import About from './Components/About';
+import Skills from './Components/Skills';
+import Education from './Components/Education';
+import Experience from './Components/Experience';
+import Contact from './Components/Contact';
+import Projects from './Components/Projects';
+import Intro from './Components/Intro';
 const Home = () => {
     const fileId = '1S9V9TZWAvF6Mt1KPYUj7LKUa_9yEUs1i';
 
@@ -39,7 +46,7 @@ const Home = () => {
   };
     return (
         <div>
-            <section className='w-11/12 mx-auto dark:text-white shadow-sm p-5 rounded-2xl'>
+            {/* <section className='w-11/12 mx-auto dark:text-white shadow-sm p-5 rounded-2xl'>
                 <motion.div initial={{ opacity: 0, y: 50 }}  // Start hidden and pushed down
         animate={{ opacity: 1, y: 0 }}   // Fade in and slide up
         transition={{ duration: 0.6, ease: "easeOut" }} // Smooth timing
@@ -66,8 +73,9 @@ const Home = () => {
                     </div>
                       
                 </motion.div>
-            </section>
-            <section id='about'  className='w-11/12 my-10 mx-auto shadow-sm p-5 rounded-2xl'>
+            </section> */}
+            <Intro></Intro>
+            {/* <section id='about'  className='w-11/12 my-10 mx-auto shadow-sm p-5 rounded-2xl'>
             <h1 className='text-3xl font-bold text-center my-10'>About Me</h1>
             <motion.div className='bg-blue-50 m-5 p-5 rounded-2xl text-justify' initial={{ opacity: 0, y: 50 }}  // Start hidden and pushed down
         animate={{ opacity: 1, y: 0 }}   // Fade in and slide up
@@ -79,8 +87,9 @@ const Home = () => {
                 <p data-theme="light" className='bg-blue-50' >I am a tech enthusiast who likes to learn different technologies like web technologies, AI and machine learning. This enthusiasm developed during my bachelor's education. At the time of my first job I felt an urge to learn programming. So I attended a master's program to enhance my programming skills. I have noticed that the technology that we learn and use is changing rapidly and so to be relevant in the current job sector we need to learn new technologies regardless of their domain. I also enjoy reading books and gardening. </p>
             </motion.div>
                 
-            </section>
-            <section id='skill' className='w-11/12 my-10 mx-auto shadow-sm p-5 rounded-2xl'>
+            </section> */}
+            <About></About>
+            {/* <section id='skill' className='w-11/12 my-10 mx-auto shadow-sm p-5 rounded-2xl'>
                 <h1 className='text-3xl font-bold text-center my-10'>Skills</h1>
                 <motion.div  initial={{ opacity: 0, y: 50 }}  // Start hidden and pushed down
         animate={{ opacity: 1, y: 0 }}   // Fade in and slide up
@@ -119,8 +128,9 @@ const Home = () => {
                       <img src="https://res.cloudinary.com/dfhlm4cyw/image/upload/v1754312864/b28165db-1eed-4f6a-9027-8f3317357e55-cover_yniflb.png" alt="" />
                     </div>
                 </motion.div>
-            </section>
-            <section id='education' className='w-11/12 my-10 mx-auto shadow-sm p-5 rounded-2xl'>
+            </section> */}
+            <Skills></Skills>
+            {/* <section id='education' className='w-11/12 my-10 mx-auto shadow-sm p-5 rounded-2xl'>
                 <h1 className='text-3xl font-bold text-center my-10'>Education</h1>
                 <div>
                     <motion.div initial={{ opacity: 0, y: 50 }}  // Start hidden and pushed down
@@ -144,8 +154,9 @@ const Home = () => {
                         <h2>Khulna University of Engineering and Technology</h2>
                     </motion.div>
                 </div>
-            </section>
-            <section id='experience' className='w-11/12 my-10 mx-auto shadow-sm p-5 rounded-2xl'>
+            </section> */}
+            <Education></Education>
+            {/* <section id='experience' className='w-11/12 my-10 mx-auto shadow-sm p-5 rounded-2xl'>
                 <h1 className='text-3xl font-bold text-center my-10'>Experience</h1>
                 <div>
                     <motion.div initial={{ opacity: 0, y: 50 }}  // Start hidden and pushed down
@@ -194,8 +205,9 @@ const Home = () => {
                     <div>
                     </div>
                 </div>
-            </section>
-            <section id='projects' className='w-11/12 my-10 mx-auto shadow-sm p-5 rounded-2xl'>
+            </section> */}
+            <Experience></Experience>
+            {/* <section id='projects' className='w-11/12 my-10 mx-auto shadow-sm p-5 rounded-2xl'>
                 <h1 className='text-3xl font-bold text-center my-10'>Projects</h1>
     <motion.div initial={{ opacity: 0, y: 50 }}  // Start hidden and pushed down
         animate={{ opacity: 1, y: 0 }}   // Fade in and slide up
@@ -234,7 +246,7 @@ const Home = () => {
       >
         Details
       </motion.button>
-                    {/* <button className='btn btn-soft btn-accent '>Details</button> */}
+                   
                     </Link>
                     </div>
                     
@@ -283,7 +295,7 @@ const Home = () => {
       >
         Details
       </motion.button>
-                    {/* <button className='btn btn-soft btn-accent '>Details</button> */}
+                   
                     </Link>
                     </div>
                     
@@ -326,7 +338,7 @@ const Home = () => {
       >
         Details
       </motion.button>
-                    {/* <button className='btn btn-soft btn-accent '>Details</button> */}
+                   
                     </Link>
                     </div>
                     
@@ -336,8 +348,9 @@ const Home = () => {
                 </motion.div>
                 
                 
-            </section>
-            <section id="contacts" className="w-11/12 my-10 mx-auto shadow-sm p-5 rounded-2xl"
+            </section> */}
+            <Projects></Projects>
+            {/* <section id="contacts" className="w-11/12 my-10 mx-auto shadow-sm p-5 rounded-2xl"
     >
       <h1 className="text-3xl font-bold text-center my-10">Contacts</h1>
         <div className='w-11/12 lg:w-full flex lg:flex-row flex-col'>
@@ -408,9 +421,11 @@ const Home = () => {
         </div>
       
 
-      {/* EmailJS Form */}
       
-    </section>
+      
+            </section> */}
+            <Contact></Contact>
+            
         </div>
     );
 };
