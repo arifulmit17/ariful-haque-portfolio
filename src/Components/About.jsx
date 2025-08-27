@@ -51,7 +51,7 @@ const About = () => {
                 <h3 className="text-2xl md:text-3xl font-semibold">
                   Hello, I'm Arif
                 </h3>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p className="text-lg text-muted-foreground text-justify leading-relaxed">
                   With over 8 months of experience in web development, I specialize in creating 
                   modern, responsive applications using React, Express, and other latest web technologies. 
                   My passion lies in building user-centric solutions that not only look great but also 
