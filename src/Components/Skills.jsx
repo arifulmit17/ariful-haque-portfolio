@@ -46,7 +46,7 @@ const Skills = () => {
       gradient: "from-green-500/10 to-emerald-500/10",
     },
     {
-      title: "DevOps & Tools",
+      title: "Tools",
       skills: [
         { name: "Git", logo: techLogos.Git },
         { name: "Daisy Ui", logo: techLogos.DaisyUI },
@@ -87,7 +87,7 @@ const Skills = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gradient">
-              Skills & Expertise
+              Skills
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               A comprehensive toolkit for building modern, scalable, and

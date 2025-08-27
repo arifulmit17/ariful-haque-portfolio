@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
  import { Typewriter } from "react-simple-typewriter";
 import { SiGithub, SiLinkedin } from "react-icons/si";
+
 const fileId = "1S9V9TZWAvF6Mt1KPYUj7LKUa_9yEUs1i";
 
 const handleDownload = () => {
@@ -13,6 +14,7 @@ const handleDownload = () => {
 
 const Intro = () => {
   return (
+    
     <motion.section
       className="w-11/12 mx-auto shadow-sm p-5 rounded-2xl flex flex-col lg:flex-row items-center gap-6"
       initial={{ opacity: 0, y: 50 }}
@@ -112,7 +114,9 @@ const Intro = () => {
         </motion.button>
       </motion.div>
     </motion.section>
+    
   );
 };
+
 
 export default Intro;
