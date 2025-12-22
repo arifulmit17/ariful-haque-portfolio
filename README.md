@@ -5,6 +5,7 @@ Live link: https://ariful-haque-portfolio.netlify.app/
 
 Features:
 1. Responsive design
-2. Dark-light theme 
+2. Dark-light theme
+3. Framer motion animation
 
 
