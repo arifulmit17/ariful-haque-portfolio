@@ -7,5 +7,6 @@ Features:
 1. Responsive design
 2. Dark-light theme
 3. Framer motion animation
+4. Well defined sections
 
 
