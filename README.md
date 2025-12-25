@@ -9,4 +9,6 @@ Features:
 3. Framer motion animation
 4. Well defined sections
 
+Technologies:
+
 
