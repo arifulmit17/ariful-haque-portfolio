@@ -10,5 +10,6 @@ Features:
 4. Well defined sections
 
 Technologies:
+1. React JS
 
 
