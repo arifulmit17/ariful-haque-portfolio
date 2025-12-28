@@ -11,5 +11,6 @@ Features:
 
 Technologies:
 1. React JS
+2. TailwindCSS
 
 
