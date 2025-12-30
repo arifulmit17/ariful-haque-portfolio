@@ -11,7 +11,8 @@ Features:
 
 Technologies:
 1. React JS
-2. TailwindCSS
-3. Framer Motion
+2. Shadcn
+3. TailwindCSS
+4. Framer Motion
 
 
