@@ -14,5 +14,6 @@ Technologies:
 2. Shadcn
 3. TailwindCSS
 4. Framer Motion
+5. Javascript
 
 
