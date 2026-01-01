@@ -16,4 +16,6 @@ Technologies:
 4. Framer Motion
 5. Javascript
 
+Projects
+
 
