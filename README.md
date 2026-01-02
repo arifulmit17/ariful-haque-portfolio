@@ -17,5 +17,6 @@ Technologies:
 5. Javascript
 
 Projects
+1. Scholarship hub
 
 
