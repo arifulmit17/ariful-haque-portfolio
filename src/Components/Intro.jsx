@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
  import { Typewriter } from "react-simple-typewriter";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 
-const fileId = "1S9V9TZWAvF6Mt1KPYUj7LKUa_9yEUs1i";
+const fileId = "1tlgFNtwOQOoShv8RlF5T5eluEuEw3I2K";
 
 const handleDownload = () => {
   const link = document.createElement("a");

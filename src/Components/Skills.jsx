@@ -20,7 +20,8 @@ const Skills = () => {
     Postman: "https://w7.pngwing.com/pngs/28/245/png-transparent-postman-hd-logo-thumbnail.png",
     Axios: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh_7BK9Ai5yiloaCwxElbUqKcry4jWwZxNww&s",
     Firebase: "https://w7.pngwing.com/pngs/246/288/png-transparent-firebase-hd-logo-thumbnail.png",
-    React_router:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9xvHxGcglgNoQAIbG567vn4QbKE6nh6w1qQ&s"
+    React_router:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9xvHxGcglgNoQAIbG567vn4QbKE6nh6w1qQ&s",
+    Shadcn:"https://images.seeklogo.com/logo-png/51/1/shadcn-ui-logo-png_seeklogo-519786.png"
   };
 
   const skillCategories = [
@@ -28,7 +29,9 @@ const Skills = () => {
       title: "Frontend Development",
       skills: [
         { name: "React", logo: techLogos.React },
+        { name: "NextJs", logo: techLogos.Next },
         { name: "Tailwind CSS", logo: techLogos.Tailwind },
+        { name: "TypeScript", logo: techLogos.TypeScript },
         { name: "JavaScript", logo: techLogos.JavaScript },
         { name: "HTML/CSS", logo: techLogos.HTML },
       ],
@@ -39,6 +42,7 @@ const Skills = () => {
       skills: [
         { name: "Node.js", logo: techLogos.Node },
         { name: "Express", logo: techLogos.Express },
+        { name: "PostgreSQL", logo: techLogos.PostgreSQL },
         { name: "MongoDB", logo: techLogos.MongoDB },
         { name: "REST APIs", logo: techLogos.REST },
         { name: "Firebase", logo: techLogos.Firebase },
@@ -53,6 +57,7 @@ const Skills = () => {
         { name: "Postman", logo: techLogos.Postman },
         { name: "Axios", logo: techLogos.Axios },
         { name: "React-router", logo: techLogos.React_router },
+        { name: "Shadcn UI", logo: techLogos.Shadcn },
       ],
       gradient: "from-orange-500/10 to-yellow-500/10",
     },
