@@ -10,6 +10,21 @@ const fileId = '1S9V9TZWAvF6Mt1KPYUj7LKUa_9yEUs1i';
 const Experience = () => {
   const experiences = [
     {
+      title: "Junior frontend developer intern",
+      company: "Level 6 it",
+      location: "Rajshahi",
+      period: "2025 - present",
+      type: "Full-time",
+      description: "Build engaging and user-friendly landing page and websites",
+      responsibilities: [
+        
+            "Convert figma designs to interactive and responsive websites",
+            "Take inspiration from different websites to make responsive and interactive websites",
+            "Connect REST API to the frontend and test api using postman"
+                        
+      ],
+    },
+    {
       title: "Assistant Programmer",
       company: "Rajshahi City Corporation",
       location: "Rajshahi",
