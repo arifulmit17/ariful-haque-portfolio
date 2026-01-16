@@ -20,6 +20,7 @@ const Experience = () => {
         
             "Convert figma designs to interactive and responsive websites",
             "Take inspiration from different websites to make responsive and interactive websites",
+            "Build website using reusable components and modular code",
             "Connect REST API to the frontend and test api using postman"
                         
       ],
